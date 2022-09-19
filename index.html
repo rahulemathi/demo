@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+<body>
+   
+<!--show and hide with password validation -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card" style="width: 20rem;">
+                    <img src="" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Registration</h5>
+                      <form action="">
+                     <input class="my-2 form-control" type="text" name="username" placeholder="enter your username">
+                     <input id="password" class="my-2  form-control" type="password" name="password" placeholder="enter your password">
+                     <input id="cpassword" class="my-2  form-control" type="password" name="confirm-password" placeholder="retype your password" onkeypress="validate()">
+                     <span id="pdm"></span> </br>
+                     <input type="submit" class="btn btn-primary" name="submit" value="submit">
+                      <p class="mt-2">already registred ? <a href="">Click Here</a> </p>
+                      </form>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+<!--show and hide-->
+
+
+<!--onchange event-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <select name="" id="things" onchange="change()">
+                <option value="milk">milk</option>
+                <option value="eggs">eggs</option>
+                <option value="burger">burger</option>
+                <option value="french fries">french fries<w/option>
+            </select>
+            <h1 id="thingsName"></h1>
+        </div>
+    </div>
+</div>
+<!--onchange-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <input id="type" type="text" placeholder="type anything">
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
